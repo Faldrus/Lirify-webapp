@@ -1,0 +1,238 @@
+@import url(./color/dark.css);
+@import url(./color/dark-hc.css);
+@import url(./color/dark-mc.css);
+@import url(./color/light.css);
+@import url(./color/light-hc.css);
+@import url(./color/light-mc.css);
+
+main * {
+    /*border: thin solid red;*/
+}
+
+main {
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+main > :first-child {
+    flex: auto;
+    flex-grow: 1;
+    display: flex;
+}
+
+main > :first-child > :first-child {
+    padding: 0.5rem;
+}
+
+#profile-title-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile-title-div > h2 {
+    font-size: 2rem;
+
+    color: var(--md-sys-color-primary);
+}
+
+#profile-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: thin solid var(--md-sys-color-outline);
+    border-radius: 1rem;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+    padding: 10px;
+    margin: 20px auto;
+}
+
+#profile-info {
+    display: flex;
+    align-items: center;
+}
+
+#profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#profile-text{
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#profile-email {
+    color: #555;
+}
+
+#profile-bio {
+    display: none;
+}
+
+#profile-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#profile-buttons > button {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 5px;
+    text-align: center;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+}
+
+#profile-buttons > button:hover {
+    color: var(--md-sys-color-on-primary);
+    background-color: var(--md-sys-color-primary);
+    cursor: pointer;
+}
+
+#upload-song > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#upload-album > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#settings-title-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#settings-title-div > h2 {
+    font-size: 2rem;
+
+    color: var(--md-sys-color-primary);
+}
+
+#settings-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: thin solid var(--md-sys-color-outline);
+    border-radius: 1rem;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+    padding: 10px;
+    margin: 20px auto;
+}
+
+
+#confirm {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 5px;
+    text-align: center;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+}
+
+#confirm:hover {
+    color: var(--md-sys-color-on-primary);
+    background-color: var(--md-sys-color-primary);
+    cursor: pointer;
+}
+
+#delete {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 20px;
+    text-align: center;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-surface-variant);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+}
+
+#delete:hover {
+    color: var(--md-sys-color-on-primary);
+    background-color: rgb(255 218 214);
+    cursor: pointer;
+}
+
+#settings input {
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#new-biography {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal button {
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #1ed760;
+}
+
+.modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}

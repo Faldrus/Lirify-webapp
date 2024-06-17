@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/playlist.css">
+  <script src="../js/playlist.js"></script>
+  <script src="../js/template.js"></script>
+  <title>Lirify</title>
+</head>
+
+<body class="dark">
+  <header>
+    <form id="search-bar">
+      <input type="text" placeholder="Search on Lirify" name="search" id="search"/>
+    </form>
+    <button id="theme-switch">Theme</button>
+  </header>
+
+  <nav>
+    <div class="sticky">
+      <h1>Lirify</h1>
+      <hr>
+      <ul>
+        <li><button id="nav-homepage">Homepage</button></li>
+        <li><button id="nav-profile">Profile</button></li>
+        <li><button id="nav-library">Library</button></li>
+        <li><button id="nav-login">Login/Register</button></li>
+      </ul>
+    </div>
+  </nav>
+
+<main>
+  <div id="playlist-nav">
+    <h2 id="playlist-name"></h2>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2> Are you sure you want to delete the Playlist?</h2>
+        <button id="confirmBtn" type="button">Confirm</button>
+        <button id="cancelBtn" type="button">Cancel</button>
+      </div>
+    </div>
+    <div id="playlist-actions">
+      <p id="playlist-capacity"></p>
+      <button id="deleteBtn" type="button">Delete</button>
+    </div>
+  </div>
+  <hr>
+  <div id="playlist-songs">
+    <!-- SONG CARDS HERE -->
+  </div>
+</main>
+
+<footer>
+  <div>RanaMelone: Lirify | 2024</div>
+  <div>
+    <div>Web Applications Project</div>
+    <div>Andrea Valentinuzzi 2090451 - Giovanni Brejc 2096046 - Arjun Jassal 2095488</div>
+  </div>
+</footer>
+</body>
+</html>

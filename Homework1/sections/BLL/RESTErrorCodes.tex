@@ -1,0 +1,61 @@
+\subsection{REST Error Codes}
+
+%If needed, add few lines of text, describing the error codes table
+
+\begin{longtable}{|p{.15\columnwidth}|p{.3\columnwidth} |p{.4\columnwidth}|} 
+\hline
+\textbf{Error Code} & \textbf{HTTP Status Code} & \textbf{Description} \\\hline
+
+        -100 & SC\_BAD\_REQUEST & Wrong format. \\\hline
+        -101 & SC\_BAD\_REQUEST & One or more input fields are empty. \\\hline
+        -202 & SC\_BAD\_REQUEST & Email missing. \\\hline
+        -104 & SC\_BAD\_REQUEST  & Password missing. \\\hline
+        -105 & SC\_BAD\_REQUEST & Submitted credentials are wrong. \\\hline
+        -107 & SC\_CONFLICT & Different passwords introduced. \\\hline
+        -108 & SC\_CONFLICT & Email is already in use. \\\hline
+        -209 &  SC\_BAD\_REQUEST & Username already exists. \\\hline
+        -116 &  SC\_BAD\_REQUEST & Problems in creating playlist. \\\hline
+        -117 & SC\_BAD\_REQUEST & Problems in creating album. \\\hline
+        -118 & SC\_BAD\_REQUEST & Problems in creating artist. \\\hline
+        -119 & SC\_BAD\_REQUEST & Problems in creating song. \\\hline
+        -120 & SC\_BAD\_REQUEST & Problems in creating user. \\\hline
+        -301 & SC\_BAD\_REQUEST & Problems in updating user. \\\hline
+        -302 & SC\_BAD\_REQUEST & Problems in updating artist. \\\hline
+        -303 & SC\_INTERNAL\_SERVER\_ERROR & Failed to upload lyrics. \\\hline
+        -112 & SC\_BAD\_REQUEST & Song not found. \\\hline
+        -410 & SC\_INTERNAL\_SERVER\_ERROR & Failed to like the song. \\\hline
+        -411 & SC\_BAD\_REQUEST & Song already liked by the user. \\\hline
+        -113 & SC\_BAD\_REQUEST & Album not found. \\\hline
+        -412 & SC\_INTERNAL\_SERVER\_ERROR & Failed to like the album. \\\hline
+        -413 & SC\_BAD\_REQUEST & Album already liked by the user. \\\hline
+        -600 & SC\_BAD\_REQUEST & Invalid Song ID. \\\hline
+        -601 & SC\_BAD\_REQUEST & Song title missing. \\\hline
+        -602 & SC\_BAD\_REQUEST & Invalid YouTube URL. \\\hline
+        -603 & SC\_BAD\_REQUEST & Invalid release date for the song. \\\hline
+        -604 & SC\_BAD\_REQUEST & Invalid duration for the song. \\\hline
+        -700 & SC\_BAD\_REQUEST & Invalid Artist ID. \\\hline
+        -701 & SC\_BAD\_REQUEST & Artist name missing. \\\hline
+        -702 & SC\_BAD\_REQUEST & Biography missing for the artist. \\\hline
+        -703 & SC\_BAD\_REQUEST & Verification status missing for the artist. \\\hline
+        -704 & SC\_BAD\_REQUEST & Language missing for the artist. \\\hline
+        -800 & SC\_BAD\_REQUEST & Invalid Album ID. \\\hline
+        -801 & SC\_BAD\_REQUEST & Album title missing. \\\hline
+        -802 & SC\_BAD\_REQUEST & Album image missing. \\\hline
+        -803 & SC\_BAD\_REQUEST & Invalid release date for the album. \\\hline
+        -900 & SC\_BAD\_REQUEST & Invalid Playlist ID. \\\hline
+        -901 & SC\_BAD\_REQUEST & Playlist title missing. \\\hline
+        -1000 & SC\_BAD\_REQUEST & Invalid User ID. \\\hline
+        -1001 & SC\_BAD\_REQUEST & Username missing. \\\hline
+        -1004 & SC\_BAD\_REQUEST & Avatar missing. \\\hline
+        -1005 & SC\_BAD\_REQUEST & Invalid avatar format. \\\hline
+        -114 & SC\_BAD\_REQUEST & Album not found. \\\hline
+        -115 & SC\_BAD\_REQUEST & Artist not found. \\\hline
+        -121 & SC\_BAD\_REQUEST & The input JSON is in the wrong format. \\\hline
+        -400 & SC\_BAD\_REQUEST & Invalid request. \\\hline
+        -403 & SC\_FORBIDDEN & Access denied. \\\hline
+        -401 & SC\_UNAUTHORIZED & Unauthorized access. \\\hline
+        -500 & SC\_INTERNAL\_SERVER\_ERROR & Database error. \\\hline
+        -999 & SC\_INTERNAL\_SERVER\_ERROR & Internal Error. \\\hline
+\caption{Description of REST ERRORS}
+\label{tab:termGlossary}
+\end{longtable}

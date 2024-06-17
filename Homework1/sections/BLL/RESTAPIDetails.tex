@@ -1,0 +1,74 @@
+\subsection{REST API Details}
+
+%List here a few resources retrievable via REST API
+
+\subsubsection*{A resource}
+
+% the description of the resource
+
+We report here three different resources types that our web application handles during its functioning.
+
+\textbf{Song}\\
+The following endpoint allows to insert a new song into the database
+\begin{itemize}
+    \item URL: \texttt{songs/}
+    \item Method: \texttt{POST}
+    \item URL Parameters: no parameters are required in the url
+    \item Data Parameters: \\
+Required:\\
+artistid  = {integer}: The ID used for the artist that created the song. It should belong to artist already in the database.
+    \item Success Response:\\
+Code: 200\\
+Content: {data: {songid : 16, artistid : 1}}
+    \item Error Response:\\
+Code : 404 NOT FOUND\\
+Content : \{‘‘error’’: \{‘‘code’’: -115, ‘‘message’’ : ‘‘Artist not found .’’\} \\
+When: The user has passed an artist id which was not found in the database. \\\\
+Code : 500 INTERNAL SERVER ERROR\\
+Content : \{‘‘error’’: \{‘‘code’’: -999, ‘‘message’’ : ‘‘Internal Error.’’\} \\
+When: if there is a SQLException or a NamingException. \\
+
+\end{itemize}
+
+\textbf{List Albums by Artists}\\
+The following endpoint allows to get the list of albums that an artists has
+\begin{itemize}
+    \item URL: \texttt{/rest/albums/artists/\{ID\}  }
+    \item Method: \texttt{GET}
+    \item URL Parameters: ArtistID
+    \item Data Parameters:  None
+    \item Success Response:\\
+Code: 200\\
+Content: {data: {[{id : 1, title : "Shape of you"},{id : 35, title : "happier"...]}}
+    \item Error Response:
+
+    
+Code : 404 NOT FOUND\\
+Content : \{‘‘error’’: \{‘‘code’’: -115, ‘‘message’’ : ‘Artist not found .’’\} \\
+When: The URI has an artist id which was not found in the database. \\\\
+Code : 500 INTERNAL SERVER ERROR\\
+Content : \{‘‘error’’: \{‘‘code’’: -999, ‘‘message’’ : ‘‘Internal Error.’’\} \\
+When: if there is a SQLException or a NamingException. \\. \\
+\end{itemize}
+
+\textbf{Delete album}\\
+The following endpoint allows to delete a album from the database
+\begin{itemize}
+    \item URL: \texttt{/albums/\{ID\}}
+    \item Method: \texttt{DELETE}
+    \item URL Parameters:\\ 
+albumid = integer
+    \item Data Parameters: None
+    \item Success Response:\\
+Code: 200\\
+Content: The album is deleted from the database
+    \item Error Response: \\
+Code : 404 NOT FOUND\\
+Content : \{‘‘error’’: \{‘‘code’’: -114, ‘‘message’’ : ‘‘Album not found .’’\} \\
+When: The URI has an album id which was not found in the database. \\\\
+Code : 500 INTERNAL SERVER ERROR\\
+Content : \{‘‘error’’: \{‘‘code’’: -999, ‘‘message’’ : ‘‘Internal Error.’’\} \\
+When: if there is a SQLException or a NamingException. \\. \\
+    
+\end{itemize}
+

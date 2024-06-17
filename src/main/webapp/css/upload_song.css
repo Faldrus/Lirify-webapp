@@ -1,0 +1,221 @@
+@import url(./color/dark.css);
+@import url(./color/dark-hc.css);
+@import url(./color/dark-mc.css);
+@import url(./color/light.css);
+@import url(./color/light-hc.css);
+@import url(./color/light-mc.css);
+
+main * {
+    /*border: thin solid red;*/
+}
+
+main {
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+main > :first-child {
+    flex: auto;
+    flex-grow: 1;
+    display: flex;
+}
+
+main > :first-child > :first-child {
+    padding: 0.5rem;
+}
+
+#title-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title-div > h2 {
+    font-size: 2rem;
+
+    color: var(--md-sys-color-primary);
+}
+
+#song-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: thin solid var(--md-sys-color-outline);
+    border-radius: 1rem;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+    padding: 10px;
+    margin: 20px;
+}
+
+#columns-container {
+    display: flex;
+    flex-direction: row; /* Arrange left and right columns side by side */
+    gap: 1rem;
+}
+
+#left-column, #right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+#left-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+#right-column {
+    margin-left: 1rem;
+}
+
+#song-name-div {
+    display: flex;
+
+    margin-bottom: auto;
+    margin-top: 15px;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#song-name {
+    background-color: transparent;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#song-youtube-link-div {
+    display: flex;
+
+    margin-top: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#song-youtube-link {
+    background-color: transparent;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#release-date-div {
+    display: flex;
+    align-items: center;
+}
+
+#release-date-div label {
+    width: 90px;
+    margin-right: 1rem;
+}
+
+#release-date {
+    text-align: center;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#genre-div {
+    display: flex;
+    align-items: center;
+}
+
+#genre-div label {
+    width: 90px;
+    margin-right: 1rem;
+}
+
+#genre {
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    text-align: center;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#duration-div {
+    display: flex;
+    align-items: center;
+}
+
+#duration-div label {
+    width: 90px;
+    margin-right: 1rem;
+}
+
+#duration {
+    text-align: center;
+    flex: 1;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#song-lyrics-div {
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#song-lyrics {
+    background-color: transparent;
+    resize: none;
+    transition: height 0.2s ease;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+
+
+#confirm-button {
+    margin-left: auto;
+}
+
+#confirm {
+    display: flex;
+    align-items: flex-end;
+
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 5px;
+    text-align: center;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+}
+
+#confirm:hover {
+    color: var(--md-sys-color-on-primary);
+    background-color: var(--md-sys-color-primary);
+    cursor: pointer;
+}
+

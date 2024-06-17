@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <script src="../js/template.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/login.js"></script>
+  <title>Lirify</title>
+</head>
+
+<body class="dark">
+  <header>
+    <form id="search-bar">
+      <input type="text" placeholder="Search on Lirify" name="search" id="search"/>
+    </form>
+    <button id="theme-switch">Theme</button>
+  </header>
+
+  <nav>
+    <div class="sticky">
+      <h1>Lirify</h1>
+      <hr>
+      <ul>
+        <li><button id="nav-homepage">Homepage</button></li>
+        <li><button id="nav-profile">Profile</button></li>
+        <li><button id="nav-library">Library</button></li>
+        <li><button id="nav-login">Login/Register</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div id="register">
+      <h2>Register</h2>
+      <form id="r-form">
+        <div>
+          <label for="r-is-artist">Artist?</label>
+          <input type="checkbox" id="r-is-artist" name="r-is-artist">
+        </div>
+        <div>
+          <label for="r-username">Username</label>
+          <input type="text" id="r-username" name="r-username" required>
+        </div>
+        <div>
+          <label for="r-email">Email</label>
+          <input type="text" id="r-email" name="r-email" required>
+        </div>
+        <div>
+          <label for="r-email-confirm">Confirm Email</label>
+          <input type="text" id="r-email-confirm" name="r-email-confirm" required>
+        </div>
+        <div>
+          <label for="r-password">Password (8-25)</label>
+          <input type="password" id="r-password" name="r-password" required>
+        </div>
+        <div>
+          <label for="r-password-confirm">Confirm Password</label>
+          <input type="password" id="r-password-confirm" name="r-password-confirm" required>
+        </div>
+        <button id="r-submit" type="button">Register</button>
+      </form>
+    </div>
+    <div id="login-user">
+      <h2>User Login</h2>
+      <form id="lu-form">
+        <div>
+          <label for="lu-email">Email</label>
+          <input type="text" id="lu-email" name="lu-email" required>
+        </div>
+        <div>
+          <label for="lu-password">Password</label>
+          <input type="password" id="lu-password" name="lu-password" required>
+        </div>
+        <button id="lu-submit" type="button">Login</button>
+      </form>
+    </div>
+    <div id="login-artist">
+      <h2>Artist Login</h2>
+      <form id="la-form">
+        <div>
+          <label for="la-email">Email</label>
+          <input type="text" id="la-email" name="la-email" required>
+        </div>
+        <div>
+          <label for="la-password">Password</label>
+          <input type="password" id="la-password" name="la-password" required>
+        </div>
+        <button id="la-submit" type="button">Login</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div>RanaMelone: Lirify | 2024</div>
+    <div>
+      <div>Web Applications Project</div>
+      <div>Andrea Valentinuzzi 2090451 - Giovanni Brejc 2096046 - Arjun Jassal 2095488</div>
+    </div>
+  </footer>
+</body>
+</html>

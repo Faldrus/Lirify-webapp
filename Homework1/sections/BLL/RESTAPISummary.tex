@@ -1,0 +1,50 @@
+\subsection{REST API Summary}
+
+%describe the REST API. If needed, add a few lines of text here, describing the content of the table.
+
+\begin{longtable}{|p{.375\columnwidth}|p{.1\columnwidth}|p{.35\columnwidth}|p{.1\columnwidth}|} 
+\hline
+\textbf{URI} & \textbf{Method} & \textbf{Description} & \textbf{Filter} \\\hline\hline
+        \multicolumn{4}{|c|}{\textbf{- Albums -}} \\\hline
+        rest/albums & POST & Create album & - \\\hline
+        rest/albums/artists/\{ID\} & GET & List albums by artist with specific ID & - \\\hline
+        rest/albums/pickalgorithm & GET & List albums by algorithm & - \\\hline
+        rest/albums/\{ID\} & DELETE & Delete album with specific ID & - \\\hline
+        rest/albums/\{ID\} & GET & Info about album with specific ID & - \\\hline
+        \multicolumn{4}{|c|}{\textbf{- Artists -}} \\\hline
+        rest/artists & POST & Create artist account & - \\\hline
+        rest/artists/\{ID\} & DELETE & Delete artist account with specific ID & - \\\hline
+        rest/artists/\{ID\} & GET & Info about artist with specific ID & - \\\hline
+        rest/artists/\{ID\} & PUT & Update entry of artist with specific ID & - \\\hline
+        \multicolumn{4}{|c|}{\textbf{- Playlists -}} \\\hline
+        rest/playlists & POST & Create playlist & - \\\hline
+        rest/playlists/users/\{ID\} & GET & List playlists by user with specific ID & - \\\hline
+        rest/playlists/\{ID\} & DELETE & Delete playlist with specific ID & - \\\hline
+        rest/playlists/\{ID\} & GET & Info about playlist with specific ID & - \\\hline
+        \multicolumn{4}{|c|}{\textbf{- Songs -}} \\\hline
+        rest/songs & POST & Create song & - \\\hline
+        rest/songs/artists/\{ID\} & GET & List songs by artist with specific ID & - \\\hline
+        rest/songs/pickalgorithm & GET & List songs by algorithm & - \\\hline
+        rest/songs/albums/\{ID\} & GET & List songs in album with specific ID & - \\\hline
+        rest/songs/albums/\{ID\} & POST & Add songs to album with specific ID & - \\\hline
+        rest/songs/\{ID\}/playlists/\{ID\} & DELETE & Delete song with specific ID from playlist with specific ID & - \\\hline
+        rest/songs/playlists/\{ID\} & GET & List songs in playlist with specific ID & - \\\hline
+        rest/songs/playlists/\{ID\} & POST & Add songs to playlist with specific ID & - \\\hline
+        rest/songs/\{ID\} & DELETE & Delete song with specific ID & - \\\hline
+        rest/songs/\{ID\} & GET & Info about song with specific ID & - \\\hline
+        \multicolumn{4}{|c|}{\textbf{- Users -}} \\\hline
+        rest/users & POST & Create user account & - \\\hline
+        rest/users/\{ID\}/albums/\{ID\} & DELETE & User with specific ID un-likes album with specific ID & - \\\hline
+        rest/users/\{ID\}/albums & GET & List albums liked by user with specific ID & - \\\hline
+        rest/users/\{ID\}/albums & POST & Like album with specific ID & - \\\hline
+        rest/users/\{ID\}/songs/\{ID\} & DELETE & User with specific ID un-likes song with specific ID & - \\\hline
+        rest/users/\{ID\}/songs & GET & List songs liked by user with specific ID & - \\\hline
+        rest/users/\{ID\}/songs & POST & Like song with specific ID & - \\\hline
+        rest/users/\{ID\} & DELETE & Delete user account with specific ID & - \\\hline
+        rest/users/\{ID\} & GET & Info about user with specific ID & - \\\hline
+        rest/users/\{ID\} & PUT & Update entry of user with specific ID & - \\\hline
+        \hline
+\caption{Description of  REST API}
+\label{tab:termGlossary}
+\end{longtable}
+\textbf{!!! The final login and filter features are not yet implemented !!!}

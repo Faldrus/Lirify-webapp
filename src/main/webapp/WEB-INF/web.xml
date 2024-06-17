@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="ranamelone-webapp" version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <display-name>RanaMelone Servlet</display-name>
+    <description>Servlet implementation</description>
+
+    <welcome-file-list>
+        <welcome-file>html/login.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- RanaMelone Servlet -->
+    <servlet>
+        <servlet-name>RestManagerServlet</servlet-name>
+        <servlet-class>it.unipd.dei.ranamelone.servlet.RestDispatcherServlet</servlet-class>
+    </servlet>
+
+    <!-- Mapping between servlets and URIs -->
+    <servlet-mapping>
+        <servlet-name>RestManagerServlet</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+
+    <resource-ref>
+        <description>Connection pool to the database</description>
+        <res-ref-name>jdbc/ranamelone</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+    <filter>
+        <filter-name>CORSFilter</filter-name>
+        <filter-class>it.unipd.dei.ranamelone.filter.CORSFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CORSFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/upload_song.css">
+    <script src="../js/template.js"></script>
+    <script src="../js/upload_song.js"></script>
+    <script src="../js/utils.js"></script>
+    <title>Lirify</title>
+</head>
+
+<body class="dark">
+    <header>
+        <form id="search-bar">
+            <input type="text" placeholder="Search on Lirify" name="search" id="search"/>
+        </form>
+        <button id="theme-switch">Theme</button>
+    </header>
+
+    <nav>
+        <div class="sticky">
+            <h1>Lirify</h1>
+            <hr>
+            <ul>
+                <li><button id="nav-homepage">Homepage</button></li>
+                <li><button id="nav-profile">Profile</button></li>
+                <li><button id="nav-library">Library</button></li>
+                <li><button id="nav-login">Login/Register</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="title-div">
+            <h2>Upload song</h2>
+            <div id="song-div">
+                <div id="columns-container">
+                    <div id="left-column">
+                        <div id="song-name-div">
+                            <input type="text" id="song-name" placeholder="Insert song name" maxlength="50" required><br>
+                        </div>
+                        <div id="song-youtube-link-div">
+                            <input type="url" id="song-youtube-link" placeholder="Insert youtube link" maxlength="255" required><br>
+                        </div>
+                    </div>
+                    <div id="right-column">
+                        <div id="release-date-div">
+                            <label for="release-date">Release date:</label>
+                            <input type="date" id="release-date">
+                        </div>
+                        <div id="genre-div">
+                            <label for="genre">Genre:</label>
+                            <input type="text" id="genre" maxlength="20">
+                        </div>
+                        <div id="duration-div">
+                            <label for="duration">Duration:</label>
+                            <input type="time" id="duration" value="00:00:00" step="1" required>
+                        </div>
+                    </div>
+                </div>
+                <div id="song-lyrics-div">
+                    <textarea id="song-lyrics" rows="20" cols="65" placeholder="Enter lyrics..." maxlength="8000" required></textarea>
+                </div>
+                <div id="confirm-button">
+                    <button id="confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>RanaMelone: Lirify | 2024</div>
+        <div>
+            <div>Web Applications Project</div>
+            <div>Andrea Valentinuzzi 2090451 - Giovanni Brejc 2096046 - Arjun Jassal 2095488</div>
+        </div>
+    </footer>
+</body>
+</html>

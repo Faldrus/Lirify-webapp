@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/library.css">
+    <script src="../js/template.js"></script>
+    <script src="../js/library.js"></script>
+    <script src="../js/utils.js"></script>
+    <title>Lirify</title>
+</head>
+
+<body class="dark">
+    <header>
+        <form id="search-bar">
+            <input type="text" placeholder="Search on Lirify" name="search" id="search"/>
+        </form>
+        <button id="theme-switch">Theme</button>
+    </header>
+
+    <nav>
+        <div class="sticky">
+            <h1>Lirify</h1>
+            <hr>
+            <ul>
+                <li><button id="nav-homepage">Homepage</button></li>
+                <li><button id="nav-profile">Profile</button></li>
+                <li><button id="nav-library">Library</button></li>
+                <li><button id="nav-login">Login/Register</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="playlist">
+            <div id="playlist-top">
+                <h2>My Playlists</h2>
+                <button id="create" type="button">Create Playlist</button>
+            </div>
+            <hr>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <form id="form">
+                        <label for="nameInput" id="lname">Playlist Name</label>
+                        <div id="sub-sec">
+                            <input type="text" id="nameInput">
+                            <button id="submitBtn" type ="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal2">
+                <div class="modal-content2">
+                    <ol id="list2">
+                        <!-- User's playlist list -->
+                    </ol>
+                </div>
+            </div>
+
+            <div id="playlist-list">
+                <!-- playlistscards <div>s -->
+            </div>
+        </div>
+        <div  id="songs">
+            <h2>Songs</h2>
+            <hr>
+            <div id="songs-list">
+                <!-- songsscards <div>s -->
+            </div>
+        </div>
+        <div id="albums">
+            <h2>Albums</h2>
+            <hr>
+            <div id="albums-list">
+                <!-- albumscards <div>s -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>RanaMelone: Lirify | 2024</div>
+        <div>
+            <div>Web Applications Project</div>
+            <div>Andrea Valentinuzzi 2090451 - Giovanni Brejc 2096046 - Arjun Jassal 2095488</div>
+        </div>
+    </footer>
+</body>
+</html>

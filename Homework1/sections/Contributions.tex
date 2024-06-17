@@ -1,0 +1,148 @@
+\section{Group Members Contribution}
+
+% For each group member, describe in detail the contribution to the project.
+
+\begin{description}
+
+    \item[Isabel Torres-Pardo López] sum up:
+    \begin{itemize}
+        \item LaTeX Homework file:
+        \begin{itemize}
+            \item Objectives
+            \item Data Logic Layer : text + schemas (later revised by Álvaro Martín Bacas)
+            \item Business Logic Layer : descriptions + diagrams
+        \end{itemize}
+        \item Helped in servlets files (together with Jesús Alcázar Pérez)
+        \item Helped in jsp classes (together with Jesús Alcázar Pérez)
+        \item Helped in doing the Sequence Diagram (together with Jesús Alcázar Pérez)
+        \item database: \verb|database/ranamelone.sql| (created initial tables later revised), \verb|database/insert.sql|
+        \item packages in \verb|it.unipd.dei.ranamelone|:
+        \begin{itemize}
+            \item \verb|filter.*| (together with Jesús Alcázar Pérez)
+            \item \verb|resources.*| (initial base later revised and perfected)
+            \item \verb|rest.Create*|, \item\verb|rest.Delete*| (except \verb|rest.DeleteSongFromPlaylistRR|)
+            \item \verb|rest.ListAlbumsByArtistRR|, 
+\verb|rest.ListPlaylistsByUserRR|, \verb|rest.ListSongsByArtistRR|
+            \item \verb|rest.Update*|
+            \item \verb|utils.DataSourceProvider|
+            \item \verb|dao.*| (initial base later revised and perfected)
+        \end{itemize}
+    \end{itemize}
+
+    
+    \item[Jesús Alcázar Pérez] sum up:
+    \begin{itemize}
+        \item LaTeX Homework file:
+        \begin{itemize}
+            \item Objectives
+            \item Main Functionalities
+            \item Presentation Logic Layer: pages and logic definition + final mockups
+        \end{itemize}
+        \item Helped in servlets files (together with Isabel Torres-Pardo López)
+        \item Helped in jsp classes (together with Isabel Torres-Pardo López)
+        \item Helped in doing the Sequence Diagram (together with Isabel Torres-Pardo López)
+        \item packages in \verb|it.unipd.dei.ranamelone|:
+        \begin{itemize}
+            \item \verb|resources.Actions|
+            \item \verb|filter.*| (together with Isabel Torres-Pardo López)
+            \item \verb|rest.Info*| 
+        \end{itemize}
+    \end{itemize}
+    
+    \item[Andrea Valentinuzzi] sum up:
+    \begin{itemize}
+        \item Repository structure setup (+ Abstract classes etc.)
+        \item Presentation Logic Layer: pages and logic definition + initial approximate sketch
+        \item REST API (together with Giovanni Brejc 50-50)
+        \item LaTeX Homework file:
+        \begin{itemize}
+            \item 5.3 REST API Summary
+        \end{itemize}
+        \item files: \verb|docker-compose.yml|, \verb|pom.xml|, \verb|web.xml|
+        \item database: \verb|database/ranamelone.sql| (updates and feature completions, together with Arjun Jassal and Giovanni Brejc)
+        \item packages in \verb|it.unipd.dei.ranamelone|:
+        \begin{itemize}
+            \item \verb|servlet.AbstractDatabaseServlet|, \verb|servlet.RestDispatcherServlet|
+            \item \verb|func.*| (together with Giovanni Brejc 50-50)
+            \item \verb|resources.*| (except \verb|resources.Actions|)
+            \item \verb|rest.Like*|
+            \item \verb|rest.ListAlbumsByAlgorithmRR|, \verb|rest.ListAlbumsLikedByUserRR|, \verb|rest.ListSongsByAlgorithmRR|, \verb|rest.ListSongsLikedByUserRR|
+            \item \verb|dao.Delete*| (except \verb|dao.DeleteSongFromPlaylistDAO|)
+            \item \verb|dao.List*| 
+        \end{itemize}
+        \item final notes (together with Arjun Jassal and Giovanni Brejc):
+        \begin{itemize}
+            \item code refactor, syntax corrections, error codes checking over the whole project (total re-writing of \verb|it.unipd.dei.ranamelone.*|)
+            \item bug fixing
+            \item some REST calls testing (just basic ones, TODO: complete testing)
+        \end{itemize}
+    \end{itemize}
+
+    \item[Giovanni Brejc] sum up:
+    \begin{itemize}
+        \item Presentation Logic Layer: pages and logic definition + initial approximate sketch
+        \item REST API (together with Andrea Valentinuzzi 50-50)
+        \item database: \verb|database/ranamelone.sql| (updates and feature completions, together with Andrea Valentinuzzi and Arjun Jassal)
+        \item packages in \verb|it.unipd.dei.ranamelone|:
+        \begin{itemize}
+            \item \verb|func.*| (together with Andrea Valentinuzzi 50-50)
+            \item \verb|rest.Unlike*|
+            \item \verb|rest.ListSongsInAlbumRR|, \verb|rest.ListSongsInPlaylistRR|
+            \item \verb|dao.Like*|
+            \item \verb|dao.Unlike*|
+            \item \verb|dao.Update*|
+        \end{itemize}
+        \item final notes (together with Andrea Valentinuzzi and Arjun Jassal):
+        \begin{itemize}
+            \item code refactor, syntax corrections, error codes checking over the whole project (total re-writing of \verb|it.unipd.dei.ranamelone.*|)
+            \item bug fixing
+        \end{itemize}
+    \end{itemize}
+    
+    \item[Arjun Jassal] sum up:
+    \begin{itemize}
+        \item Presentation Logic Layer: pages and logic definition + initial approximate sketch
+        \item database: \verb|database/ranamelone.sql| (updates and feature completions, together with Andrea Valentinuzzi and Giovanni Brejc)
+        \item packages in \verb|it.unipd.dei.ranamelone|:
+        \begin{itemize}
+            \item \verb|rest.Add*|
+            \item \verb|rest.DeleteSongFromPlaylistRR|
+            \item \verb|dao.Add*|
+            \item \verb|dao.DeleteSongFromPlaylistDAO|
+            \item \verb|dao.Create*|
+            \item \verb|dao.Info*|
+        \end{itemize}
+        \item final notes (together with Andrea Valentinuzzi and Giovanni Brejc):
+        \begin{itemize}
+            \item code refactor, syntax corrections, error codes checking over the whole project (total re-writing of \verb|it.unipd.dei.ranamelone.*|)
+            \item bug fixing
+        \end{itemize}
+    \end{itemize}
+    
+    \item[Álvaro Martín Bacas] sum up:
+    \begin{itemize}
+        \item UploadSong Mockup
+        \item Updated final DB schema and tables and DBSchema latex file
+        \item packages in \verb|it.unipd.dei.ranamelone|:
+        \begin{itemize}
+            \item \verb|utils.ErrorCode|
+            \item \verb|dao.*| (some files creation)
+            \item \verb|rest.*| (some files creation)
+        \end{itemize}
+    \end{itemize}
+
+    \item[TODO] things not yet tackled/completed:
+    \begin{itemize}
+        \item finish testing all REST calls
+        \item implement Login feature
+        \item implement Filter feature
+        \item sort content of \verb|it.unipd.dei.ranamelone|'s sub-packages in sub-sub-packages for better readability
+    \end{itemize}
+
+    \item[NOTE(s)] Disclaimers:
+    \begin{itemize}
+        \item (most of the) Contributions from Andrea Valentinuzzi, Arjun Jassal and Giovanni Brejc were submitted to BitBucket with the 'akappakappa' account, that belongs to Andrea Valentinuzzi, but were worked on together by the 3 students using the "Code With Me" feature inside IntelliJ IDEA. \\
+        Those commits' messages contain: "Code With Me: Andrea Valentinuzzi andrea.valentinuzzi@studenti.unipd.it, Giovanni Brejc giovanni.brejc@studenti.unipd.it, Arjun Jassal arjun.jassal@studenti.unipd.it".
+    \end{itemize}
+
+\end{description}

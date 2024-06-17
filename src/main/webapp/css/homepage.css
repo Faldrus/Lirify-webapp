@@ -1,0 +1,82 @@
+@import url(./color/dark.css);
+@import url(./color/dark-hc.css);
+@import url(./color/dark-mc.css);
+@import url(./color/light.css);
+@import url(./color/light-hc.css);
+@import url(./color/light-mc.css);
+
+main * {
+    /*border: 1px solid red;*/
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem;
+    width: 75%;
+    min-width: min-content;
+}
+
+main > :first-child,
+main > :last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+main > :first-child > h2,
+main > :last-child > h2 {
+    font-size: 1.5rem;
+
+    color: var(--md-sys-color-primary);
+}
+
+#album-algorithm,
+#song-algorithm {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+
+    border: thin solid var(--md-sys-color-outline);
+    border-radius: 1rem;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    flex: 1 0 max-content;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.card > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card > a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card > :first-child,
+.card > :first-child:visited {
+    color: var(--md-sys-color-primary);
+    font-size: 1.25rem;
+}
+
+.card > :last-child {
+    font-size: 0.75rem;
+}

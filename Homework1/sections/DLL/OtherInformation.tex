@@ -1,0 +1,7 @@
+\subsection{Other Information}
+
+%if needed write here other details about your Data Logic Layer that cannot be expressed directly through the ER schema
+
+It is possible to interact with most of the entities (insertion, deletion and update) directly via interface. The only exception is for the album entity, which can only be created and deleted by an artist.  
+
+There is a custom enumeration called Genre, in which we save a list of different genres of music, as example 'Pop' and 'Rock'. In the enumeration, the value 'Other' is established by default, so if during the creation of a song or an album the artist doesn't specify a genre, the type 'Other' will be written.

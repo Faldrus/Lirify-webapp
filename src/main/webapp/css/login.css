@@ -1,0 +1,112 @@
+@import url(./color/dark.css);
+@import url(./color/dark-hc.css);
+@import url(./color/dark-mc.css);
+@import url(./color/light.css);
+@import url(./color/light-hc.css);
+@import url(./color/light-mc.css);
+
+main * {
+    /*border: 1px solid red;*/
+}
+
+main {
+    display: grid;
+    grid-template: fit-content(1px) fit-content(1px) / fit-content(1px) fit-content(1px);
+    grid-template-areas:
+    "register login-user  "
+    "register login-artist";
+    align-self: center;
+    justify-self: center;
+    padding: 3rem;
+    gap: 3rem;
+}
+
+#register,
+#login-user,
+#login-artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#register > h2,
+#login-user > h2,
+#login-artist > h2 {
+    font-size: 2rem;
+
+    color: var(--md-sys-color-primary);
+}
+
+#register > form,
+#login-user > form,
+#login-artist > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    border-radius: 1rem;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    box-shadow: 0.25rem 0.25rem var(--md-sys-color-shadow);
+}
+
+#r-form > div,
+#lu-form > div,
+#la-form > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#r-form input,
+#lu-form input,
+#la-form input {
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#r-submit,
+#lu-submit,
+#la-submit {
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    border: thin solid var(--md-sys-color-outline);
+    background-color: var(--md-sys-color-on-tertiary);
+    color: var(--md-sys-color-tertiary);
+    box-shadow: 0.125rem 0.125rem var(--md-sys-color-shadow);
+}
+
+#r-submit:hover,
+#lu-submit:hover,
+#la-submit:hover {
+    background-color: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+    cursor: pointer;
+}
+
+.input-error {
+    font-weight: bold;
+    color: var(--md-sys-color-error-container);
+    text-align: center;
+}
+
+#register {
+    grid-area: register;
+}
+
+#login-user {
+    grid-area: login-user;
+}
+
+#login-artist {
+    grid-area: login-artist;
+}
